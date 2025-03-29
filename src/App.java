@@ -10,7 +10,6 @@ public class App {
         Scanner sc = new Scanner(System.in);
         CadastroController controller = new CadastroController();
         RepositorioUsuarios repo = RepositorioUsuarios.getInstancia();
-
         while (true) {
             System.out.println("=================================");
             System.out.println("🎭      TEATRO ABC - CLI         ");
