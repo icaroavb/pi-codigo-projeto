@@ -39,4 +39,18 @@ public class RepositorioUsuarios {
         }
         return false;
     }
+
+    public List<String> listarUsuarios() {
+        List<String> lista = new ArrayList<>();
+        try (Scanner sc = new Scanner(new File(caminho))) {
+            while (sc.hasNextLine()) {
+                String linha = sc.nextLine();
+                lista.add(linha);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return lista;
+    }
+
 }
