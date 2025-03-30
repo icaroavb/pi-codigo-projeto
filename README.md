@@ -1,10 +1,10 @@
-# 🎭 Sistema de Teatro - Compra de Tickets com Validação de CPF
+#  Sistema de Teatro - Compra de Tickets com Validação de CPF
 
 Este é um projeto em Java que simula um sistema de compra de ingressos para um teatro, utilizando boas práticas de organização de código e padrões de projeto.
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - Cadastro de usuários com CPF válido
 - Listagem de usuários cadastrados
@@ -14,7 +14,7 @@ Este é um projeto em Java que simula um sistema de compra de ingressos para um 
 
 ---
 
-## 🧱 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 principal/
@@ -32,7 +32,7 @@ principal/
 
 ---
 
-## 🛠️ Padrões de Projeto Aplicados
+## 🛠 Padrões de Projeto Aplicados
 
 | Padrão | Aplicação |
 |--------|-----------|
@@ -43,7 +43,7 @@ principal/
 
 ---
 
-## 🔁 Fluxo de Compra de Ticket
+##  Fluxo de Compra de Ticket
 
 1. Digitar CPF
 2. Validar CPF
@@ -55,7 +55,7 @@ principal/
 
 ---
 
-## ✅ Validação de CPF
+##  Validação de CPF
 
 - Aceita entrada com ou sem pontos/traços (`12345678900` ou `123.456.789-00`)
 - Verifica se são 11 dígitos
@@ -63,14 +63,3 @@ principal/
 - Calcula os dígitos verificadores conforme a Receita Federal
 
 ---
-
-## 🚀 Próximos passos sugeridos
-
-- Persistir poltronas compradas em arquivo
-- Associar tickets aos dados completos do usuário
-- Adicionar descontos (meia, VIP) com Strategy
-- Criar testes automatizados com JUnit
-
----
-
-## 👨‍💻 Desenvolvido com foco em boas práticas e clareza de código.
