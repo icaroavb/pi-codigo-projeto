@@ -1,9 +1,13 @@
+import principal.action.compra.CompraTicket;
+import principal.action.compra.CompraTicketTemplate;
 import principal.cadastro.CadastroController;
 import principal.cadastro.RepositorioUsuarios;
 import principal.cadastro.Usuario;
 
 import java.io.IOException;
 import java.util.Scanner;
+
+import static principal.action.compra.Poltrona.poltronas;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -16,6 +20,7 @@ public class App {
             System.out.println("=================================");
             System.out.println("[1] Cadastrar usuário");
             System.out.println("[2] Listar usuários cadastrados");
+            System.out.println("[3] Comprar ticket");
             System.out.println("[0] Sair");
             System.out.print("Escolha uma opção: ");
 
@@ -55,7 +60,10 @@ public class App {
                     System.out.println("=== Usuários Cadastrados ===");
                     repo.listarUsuarios().forEach(System.out::println);
                     break;
-
+                case "3":
+                    CompraTicketTemplate compra = new CompraTicket();
+                    compra.executar(sc, poltronas);
+                    break;
                 case "0":
                     System.out.println("Encerrando...");
                     System.exit(0);
